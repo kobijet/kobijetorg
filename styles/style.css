@@ -1,0 +1,117 @@
+/* Author: Kobi Rogers*/
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
+/* | Narrow Screen */
+/* || General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: "Domine", serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+article {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+p {
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FF7582;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #C56D86;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f5f5f5
+}
+
+/* || Classes */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav a {
+    text-align: center;
+    width: 6rem;
+    height: 44px;
+    line-height: 44px; /* Centers text vertically */
+    vertical-align: middle;
+    color: rgb(29, 29, 29);
+}
+.logo {
+    padding: 0.5em;
+    text-align: center;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4cbcb;
+    margin: 1rem;
+    line-height: 2rem;
+}
+.profile img {
+    margin: 1rem;
+    width: 10rem;
+    border-radius: 0.75rem;
+    transform: rotate(5deg);
+}
+.content {
+    padding-left: 1rem;
+}
+
+/* || Tailwind Shadows */
+.box-shadow-sm {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+.box-shadow-reg {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.box-shadow-md {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.box-shadow-lg {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.shadow-inner {
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+/* | Mobile devices */
+@media screen and (max-width: 480px) {
+}
+
+/* | Tablet devices */
+@media screen and (max-width: 769px) {
+}
+
+/* | Small screens, laptops */
+@media screen and (max-width: 1024px) {
+}
+
+/* | Desktops, TVs */
+@media screen and (min-width: 1200px) {
+    img {
+        width: 20rem;
+    }
+}

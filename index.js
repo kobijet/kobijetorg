@@ -11,4 +11,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
       current.classList.toggle("open");
     }, false);
   });
+
+  const randomTitle = Math.floor(Math.random() * 2);
+  console.log(randomTitle);
+  const changingTitle = document.getElementById("changing-title");
+  const titles = ["Musician", "Programmer"];
+  changingTitle.textContent = titles[randomTitle];
 });

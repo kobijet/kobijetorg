@@ -98,8 +98,6 @@ h3 {
     margin: 1rem;
 }
 .main {
-    display: flex;
-    flex-direction: column;
     width: 80%;
 }
 .project {
@@ -138,10 +136,18 @@ h3 {
     cursor: pointer;
 }
 .collapsible > .toggler::after {
-    content: "More \25bc";
+    content: "\25bc More";
 }
 .collapsible.open > .toggler::after {
-    content: "\25b2";
+    content: "\25b2 Less";
+}
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-me textarea {
+    resize: none;
 }
 
 /* || Tailwind Shadows */

@@ -1,5 +1,5 @@
-[v1.1.2]
-6-15-22
+[v1.1]
+6-15-22 to 6-18-22
 ADDED
 - Added OneSki Mock Website project
 - Added "collapsible" class, thanks to the-art-of-web.com
@@ -7,6 +7,8 @@ ADDED
 - Added contact form
 
 REMOVED
+- Removed "Portfolio" link from Nav until more work is made
+- Removed contact form in favor of email and social links
 
 CHANGED
 - Moved Collapsible JS into "DOMContentLoaded" event

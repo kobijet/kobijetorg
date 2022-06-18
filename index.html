@@ -29,7 +29,7 @@
                 <h2>Welcome!</h2>
                 <p>You may be wondering a few things...</p>
                 <h3>Who am I?</h3>
-                <p class="my-name-is">My name is <span style="color: #C56D86; font-size: 1.25em;">Kobi</span>!</p>
+                <p>My name is Kobi!</p>
                 <br />
                 <p>I am currently a student at Mt. Hood Community College, pursuing a degree in Computer Game Development.
                     I really enjoy city builders, rougelikes (AND rougelites), as well as real-time strategy games and first-person shooters. Pretty much anything that has randomness or management elements. I love crafting worlds and creating immersive universes for people to explore.</p>
@@ -39,19 +39,38 @@
                     Don't hesitate to reach out if you think I am a good fit for something you need done. If you're interested in my socials, they are on there too.
                 </p>
             </div>
-            <div class="recent-projects main-right-side">
-                <h2>Recent Projects</h2>
+            <div class="main-right-side">
+                <h2>Projects</h2>
                 <div class="project">
-                    <img src="https://via.placeholder.com/150">
+                    <img src="./assets/oneski_sitepreview.png">
+                    <!-- Website preview to incorporate: https://htmlpreview.github.io/?https://kobijet.github.io/CIS155-Kobijet/V4/index.html -->
                     <div>
-                        <h3>Project Title</h3>
-                        <p><b>Description:</b> This is a description of the project.</p>
+                        <h3>OneSki Website</h3>
+                        <div class="collapsible"><p><b>Description: </b>This was a school project I did for an HTML/CSS class. We were tasked with 
+                            designing a website and coding using basic HTML5 and CSS3 in about 3 months.</p><p> We were free to choose a subject, so I chose my band at 
+                            the time. We were given a list of required features for the website with new ones added every week, 
+                            and iterated on it over the course of 3 months. I produced three prior versions, and this one was the final product.</p></div>
                         <p><b>Role:</b> Designer, Developer, Artist</p>
                         <p><b>Technologies Used:</b> HTML, CSS, Git</p>
-                        <p class="nav"><b>Links:</b><a href="" class="link">Source</a><a href="" class="link">Live</a></p>
+                        <p class=""><b>Links:</b> <a href="https://github.com/kobijet/CIS155-Kobijet/tree/master/V4" class="link big-text">Source</a> | <a href="https://kobijet.github.io/CIS155-Kobijet/V4/index.html" class="link big-text">Live</a> <span style="font-size: 0.5rem;">(warning: not mobile friendly)</span></p>
                     </div>
+                </div>
+                <h2>Contact Me</h2>
+                <div>
+                    <p>My inbox is open! I am always looking to help out, so if you have a project and need some, reach out!</p>
+                    <form method="GET">
+                        <br />
+                        <label for="contact-email">Email Address: </label>
+                        <input type="contact-email" name="contact-email">
+                        <br />
+                        <label for="contact-message">Message:</label>
+                        <textarea id="contact-message" name="contact-message" cols="8" rows="5"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </article>
+
+        <script src="./index.js"></script>
     </body>
 </html>

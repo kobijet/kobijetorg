@@ -1,0 +1,12 @@
+[v1.1.2]
+6-15-22
+ADDED
+- Added OneSki Mock Website project
+- Added "collapsible" class, thanks to the-art-of-web.com
+- Added "Contact Me" heading and div
+- Added contact form
+
+REMOVED
+
+CHANGED
+- Moved Collapsible JS into "DOMContentLoaded" event

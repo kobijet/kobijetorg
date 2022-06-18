@@ -1,4 +1,12 @@
 /* Author: Kobi Rogers*/
+/*
+Colors
+
+Main Color: #E67E22
+
+Link Highlight: #D35400
+*/
+
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Padauk&display=swap');
 /* | Narrow Screen */
@@ -28,13 +36,13 @@ a {
     transition: ease-in-out 0.5s;
 }
 .link:hover {
-    color: orange;
+    color: #F39C12;
 }
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 0.5rem;
-    color: #FF7582;
+    color: #E67E22;
 }
 h2 {
     font-family: sans-serif;
@@ -42,7 +50,7 @@ h2 {
     font-weight: 700;
     line-height: 3rem;
     margin-top: 0.5rem;
-    color: #C56D86;
+    color: #D35400;
 }
 h3 {
     font-family: sans-serif;
@@ -50,7 +58,7 @@ h3 {
     font-weight: 400;
     line-height: 2rem;
     margin-top: 0.5rem;
-    color: #C56D86;
+    color: #D35400;
 }
 
 /* || Classes */
@@ -77,7 +85,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e4cbcb;
+    background-color: #e0b590;
     line-height: 2rem;
 }
 .profile img {
@@ -90,6 +98,8 @@ h3 {
     margin: 1rem;
 }
 .main {
+    display: flex;
+    flex-direction: column;
     width: 80%;
 }
 .project {
@@ -97,12 +107,41 @@ h3 {
     flex-direction: column;
 }
 .project img {
+    position: relative;
     padding-left: 5%;
-    width: 10rem;
+    width: 30rem;
     align-self: center;
 }
-.my-name-is {
+.big-text {
     font-size: 1rem;
+}
+.collapsible {
+    position: relative;
+    padding-bottom: 1em;
+}
+.collapsible:not(.open) > * {
+    display: none;
+}
+.collapsible:not(.open) > p:first-child {
+    display: block;
+}
+
+/* Collapsible code thanks to the-art-of-web.com */
+.collapsible > .toggler {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.collapsible > .toggler::after {
+    content: "More \25bc";
+}
+.collapsible.open > .toggler::after {
+    content: "\25b2";
 }
 
 /* || Tailwind Shadows */
@@ -128,17 +167,19 @@ h3 {
 }
 
 /* | Tablet devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 }
 
 /* | Small screens, laptops */
-@media screen and (max-width: 1023px) {
- 
+@media screen and (min-width: 768px) {
+    .profile img {
+        width: 15rem; /*Larger image on larger screens*/
+    }
+    .main {
+        flex-direction: row;
+    }
 }
 
 /* | Desktops, TVs */
 @media screen and (min-width: 1024px) {
-    .profile img {
-        width: 15rem;
-    }
 }
